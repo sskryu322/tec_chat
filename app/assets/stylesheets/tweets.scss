@@ -1,3 +1,52 @@
-// Place all the styles related to the tweets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/******************************************** 
+ リセット用
+*********************************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+// トップページ
+header {
+  height: 65px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: #1C3667;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  font-size: 23px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.8px;
+  color: #FFFFFF;
+}
+
+.header-right {
+  height: 32px;
+  width: 80px;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.header-btn {
+  text-decoration: none;
+  line-height: 32px;
+  color: #3A3736;
+}

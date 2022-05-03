@@ -1,0 +1,6 @@
+<%= link_to '投稿する', new_tweet_path %>
+<% @tweets.each do |tweet| %>
+  <div>タイトル：<%= tweet.title %></div>
+  <div>内容：<%= tweet.content %></div>
+  <div>投稿者名：<%= tweet.name %></div>
+<% end %>

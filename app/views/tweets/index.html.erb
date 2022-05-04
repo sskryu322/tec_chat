@@ -1,5 +1,29 @@
-<% @tweets.each do |tweet| %>
-  <div>タイトル：<%= tweet.title %></div>
-  <div>内容：<%= tweet.content %></div>
-  <div>投稿者名：<%= tweet.name %></div>
-<% end %>
+<div class="index-wrapper">
+    <div class="tweet-contents">
+      <% @tweets.each do |tweet| %>
+        <!-- 投稿一件分 -->
+        <div class="tweet-container">
+          <div class="comment">
+            <div class="count_num">0</div>
+            <div class="comment-unit">comments</div>
+          </div>
+          <!-- 質問本文 -->
+          <div class="tweet">
+            <div class="tweet-top">
+              <div class="tweet-title">
+                <%= tweet.title %>
+              </div>
+              <div class="tweet-top-name">
+                <%= tweet.name %>
+              </div>
+            </div>
+            <div class="tweet-bottom">
+              <div class="tweet-content">
+                <%= tweet.content %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+</div>

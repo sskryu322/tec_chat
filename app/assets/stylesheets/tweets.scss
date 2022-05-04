@@ -20,14 +20,13 @@ div {
 // トップページ
 header {
   height: 65px;
-  width: 100%;
   padding: 0 20px;
   background-color: #1C3667;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+// ヘッダー
 .header-left {
   font-size: 23px;
   font-weight: 100;
@@ -50,3 +49,72 @@ header {
   line-height: 32px;
   color: #3A3736;
 }
+// 投稿一覧index
+.index-wrapper {
+  height: calc(100vh - 65px);
+  background-color: #F2F2F3;
+  padding-top: 90px;
+}
+
+.tweet-contents {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.tweet-container {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.comment {
+  height: 100%;
+  width: 70px;
+  color: #FFFFFF;
+  background-color: #1C3667;
+  border-radius: 5px 0 0 5px;
+}
+
+.count_num {
+  height: 38px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.comment-unit {
+  height: 16px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.tweet {
+  height: 100%;
+  width: 630px;
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+.tweet-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-title {
+  width: 500px;
+  font-size: 14px;
+}
+
+.tweet-top-name {
+  font-size: 12px
+}
+
+.tweet-bottom {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+// 新規質問投稿new
